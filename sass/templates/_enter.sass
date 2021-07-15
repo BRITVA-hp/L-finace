@@ -1,0 +1,82 @@
+.enter
+    padding-top: 95px
+    padding-bottom: 40px
+    &__text
+        font-family: 'Lato-600'
+        font-style: normal
+        font-size: 18px
+        line-height: 130%
+        color: #262D33
+        text-align: center
+        margin-top: 18px
+        display: none
+    &__button
+        width: 100%
+        font-family: 'Lato-600'
+        font-style: normal
+        font-size: 20px
+        line-height: 130%
+        text-align: center
+        color: #FFFFFF
+        background: #262D33
+        backdrop-filter: blur(16px)
+        border-radius: 8px
+        padding: 16px 0
+        &:hover
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.7)
+            background: #36424d
+    &__input
+        background: #F2F2F2
+        box-shadow: inset 0px 3px 3px -2px rgba(0, 0, 0, 0.09)
+        backdrop-filter: blur(16px)
+        border-radius: 8px
+        border: none
+        padding: 20px 34px 12px
+        width: 100%
+        font-family: 'Lato'
+        font-style: normal
+        font-size: 18px
+        line-height: 130%
+        color: #828282
+    &__input-group
+        width: 100%
+        margin-bottom: 18px
+        &:last-of-type
+            margin-bottom: 34px
+    &__footer
+        display: flex
+        overflow: hidden
+        border-radius: 10px 10px 0 0
+        &__text
+            width: 50%
+            text-align: center
+            padding: 30px 0
+            font-family: 'RobotoSlab-Bold'
+            font-style: normal
+            font-size: 18px
+            line-height: 120%
+            color: #262D33
+            cursor: pointer
+            transition: 0.3s
+            &--active
+                background: linear-gradient(88.83deg, #337B3C 22.58%, #337B3C 160.94%)
+                color: #fff
+    &__close
+        position: absolute
+        top: 0
+        right: -61px
+        cursor: pointer
+    &__form
+        background-color: #fff
+        max-width: 526px
+        margin: auto
+        position: relative
+        border: 2px solid #D9DADB
+        border-radius: 10px
+        &__box
+            display: none
+            &--active
+                display: block
+                animation: fadeIn 0.5s
+        &__container
+            padding: 70px

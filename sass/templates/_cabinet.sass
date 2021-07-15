@@ -1,0 +1,132 @@
+.cabinet
+    padding-top: 40px
+    padding-bottom: 40px
+    &__box
+        &--left
+            margin-right: 50px
+    &__file
+        max-width: 122px
+    &__button
+        font-family: 'RobotoSlab-Bold'
+        font-style: normal
+        font-size: 18px
+        line-height: 130%
+        color: #FFFFFF
+        background-color: #337B3C
+        backdrop-filter: blur(16px)
+        border-radius: 8px
+        padding: 12px 0
+        &:hover
+            background-color: #336139
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+        &--profile
+            width: 400px
+            margin-left: auto
+            display: block
+        &--api
+            width: 260px
+    &__input-group
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        margin-bottom: 20px
+        &--api
+            flex-direction: column
+            align-items: flex-start
+        &--password
+            width: 100%
+            justify-content: space-between
+    &__input
+        background: #F2F2F2
+        box-shadow: inset 0px 3px 3px -2px rgba(0, 0, 0, 0.09)
+        backdrop-filter: blur(16px)
+        border-radius: 8px
+        padding: 14px 36px
+        border: none
+        font-family: 'Lato'
+        font-style: normal
+        line-height: 120%
+        color: #828282
+        &--profile
+            width: 400px
+        &--api
+            width: 620px
+    &__label
+        font-family: 'Lato-Bold'
+        font-style: normal
+        font-size: 18px
+        line-height: 130%
+        color: #262D33
+        margin-right: 20px
+        &--api
+            margin-right: 0
+            margin-bottom: 5px
+    &__photo
+        width: 112px
+        height: 112px
+        display: flex
+        align-items: center
+        justify-content: center
+        overflow: hidden
+        border-radius: 50%
+        margin-bottom: 15px
+    &__form
+        background: #FFFFFF
+        border: 1px solid #D9DADB
+        border-radius: 10px
+        padding: 0 20px 70px
+        display: none
+        &--active
+            display: block
+            animation: fadeIn 0.3s
+        &__row
+            padding: 0 30px
+            align-items: flex-start
+        &__title
+            font-family: 'Lato-900'
+            font-style: normal
+            font-size: 25px
+            line-height: 130%
+            color: #262D33
+            padding: 15px 20px
+            border-bottom: 1px solid #D9DADB
+            margin-bottom: 60px
+    &__row
+        display: flex
+        align-items: flex-start
+        justify-content: center
+    &__title
+        font-family: 'RobotoSlab-Bold'
+        font-style: normal
+        font-size: 48px
+        line-height: 100%
+        text-align: center
+        color: #262D33
+        margin-bottom: 70px
+    &__menu
+        background-color: #fff
+        border: 1px solid #D9DADB
+        width: 360px
+        border-radius: 10px
+        overflow: hidden
+        margin-right: 27px
+        &__logo
+            margin-right: 20px
+        &__item
+            border-bottom: 1px solid #D9DADB
+            padding: 18px 36px
+            display: flex
+            align-items: center
+            font-family: 'RobotoSlab-Bold'
+            font-style: normal
+            font-size: 24px
+            line-height: 130%
+            color: #262D33
+            cursor: pointer
+            &--active
+                background-color: #337B3C
+                color: #ffffff
+                .cabinet__color
+                    fill: #ffffff
+            &:last-of-type
+                border-bottom: none

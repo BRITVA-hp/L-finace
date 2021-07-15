@@ -1,0 +1,71 @@
+.article-slider
+    &__window
+        overflow: hidden
+        margin-bottom: 98px
+        &--mobile
+            display: none
+            overflow-x: scroll
+            padding-bottom: 10px
+    &__field
+        width: 1520px
+        display: flex
+        transition: 0.3s
+        cursor: grab
+        &--mobile
+            width: 1520px
+            display: flex
+            width: 1280px
+    &__card
+        width: 380px
+        height: 404px
+        padding: 25px 20px 30px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        background-color: #F5F5F5
+        border-right: 1px solid #BCBFC2
+        &:last-of-type
+            border-right: none
+        &--mobile
+            width: 320px
+            height: 360px
+            padding: 20px
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            background-color: #F5F5F5
+            border-right: 1px solid #BCBFC2
+            &:last-of-type
+                border-right: none
+        &__title
+            font-family: 'RobotoSlab-Bold'
+            font-style: normal
+            font-size: 18px
+            line-height: 130%
+            text-decoration-line: underline
+            color: #262D33
+        &__img
+            margin-bottom: 15px
+            border-radius: 10px
+            &--mobile
+                margin-bottom: 16px
+    &__row
+        &--title
+            margin-bottom: 20px
+    &__title
+        font-family: 'Lato-900'
+        font-style: normal
+        font-size: 40px
+        line-height: 120%
+        text-transform: uppercase
+        color: #337b3c
+    &__next
+        &--mobile
+            display: none
+        &__text
+            font-family: 'Lato'
+            font-style: normal
+            font-size: 16px
+            line-height: 100%
+            color: #939699
+            margin-right: 18px

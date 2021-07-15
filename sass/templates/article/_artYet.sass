@@ -1,0 +1,210 @@
+.article-yet
+    color: #262D33
+    &__box
+        display: grid
+        grid-template: 1fr 1fr / 1fr 1fr
+        grid-gap: 20px
+    &__row
+        &--top
+            display: grid
+            grid-template: auto / 1fr auto
+            grid-gap: 20px
+            margin-bottom: 20px
+        &--bottom
+            display: grid
+            grid-template: auto / auto auto
+            grid-gap: 20px
+    &__card
+        border-radius: 10px
+        overflow: hidden
+        width: 487px
+        height: 370px
+        &--1
+            background-image: url(../img/article/yet/bg1.png)
+            background-position: center
+            background-size: cover
+            padding: 40px 0 16px
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            align-items: center
+        &--2
+            background-image: url(../img/article/yet/bg2.png)
+            background-position: center
+            background-position-y: -50px
+            background-size: cover
+            display: flex
+            align-items: flex-end
+        &--small
+            padding: 22px 50px 16px
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            height: auto
+            background-position: center
+            background-size: cover
+            &--1
+                background-image: url(../img/article/yet/bg3.png)
+            &--2
+                background-image: url(../img/article/yet/bg4.png)
+            &--3
+                background-image: url(../img/article/yet/bg5.png)
+            &--4
+                background-image: url(../img/article/yet/bg6.png)
+        &__wrap
+            &--1
+                display: flex
+                flex-direction: column
+                align-items: center
+            &--2
+                background-color: #fff
+                padding: 15px 30px 20px
+                width: 100%
+            &--3
+
+        &__post
+            font-family: 'Lato'
+            font-style: normal
+            font-size: 9px
+            line-height: 115%
+            text-align: center
+            color: #FFFFFF
+            &--1
+                margin-bottom: 28px
+        &__name
+            font-family: 'Lato-900'
+            font-style: normal
+            font-size: 12px
+            line-height: 120%
+            display: flex
+            align-items: center
+            color: #FFFFFF
+            opacity: 0.85
+            &--1
+                margin-bottom: 2px
+        &__photo
+            min-width: 45px
+            min-height: 45px
+            width: 45px
+            height: 45px
+            display: flex
+            align-items: center
+            justify-content: center
+            overflow: hidden
+            border-radius: 50%
+            &--1
+                margin-bottom: 7px
+        &__footer
+            justify-content: flex-start
+            &--white
+                p
+                    color: #ffff !important
+                path
+                    fill: #fff !important
+            &__img
+                margin-right: 5px
+                path
+                    fill: #939699
+            &__wrap
+                display: flex
+                align-items: center
+            &__text
+                font-family: 'Lato'
+                font-style: normal
+                font-size: 12px
+                line-height: 130%
+                color: #939699
+            &__date
+                margin-right: 15px
+            &__msg
+                margin-right: 15px
+        &--big
+            background-color: #fff
+            display: flex
+            justify-content: space-between
+            width: auto
+            max-width: 993px
+            &__box
+                padding: 40px 0 16px 40px
+                max-width: 436px
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+            &__user
+                display: flex
+                margin-bottom: 24px
+                align-items: center
+                &__name
+                    font-family: 'Lato-900'
+                    font-style: normal
+                    font-size: 13px
+                    line-height: 130%
+                &__text
+                    font-family: 'Lato'
+                    font-style: normal
+                    font-size: 10px
+                    line-height: 120%
+                    max-width: 150px
+                &__photo
+                    width: 45px
+                    height: 45px
+                    min-width: 45px
+                    min-height: 45px
+                    overflow: hidden
+                    border-radius: 50%
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    margin-right: 10px
+        &__title
+            font-family: 'RobotoSlab-Bold'
+            font-style: normal
+            font-size: 24px
+            line-height: 130%
+            text-decoration-line: underline
+            &--1
+                text-align: center
+                max-width: 315px
+                margin: auto
+            &--2
+                margin-bottom: 18px
+            &--small
+                font-size: 18px
+            &--big
+                margin-bottom: 20px
+            &--3
+                margin-bottom: 5px
+        &__text
+            font-family: 'Lato'
+            font-style: normal
+            font-size: 14px
+            line-height: 130%
+            &--small
+                font-size: 12px
+        &__link
+            font-family: 'Lato-900'
+            font-style: normal
+            font-size: 12px
+            line-height: 120%
+            letter-spacing: 0.5px
+            text-decoration-line: underline
+            text-transform: uppercase
+            &--1
+                margin-bottom: 30px
+                text-align: center
+            &--2
+                margin-bottom: 14px
+            &--small
+                font-size: 10px
+            &--big
+                margin-bottom: 40px
+            &--3
+                margin-bottom: 12px
+    &__title
+        font-family: 'Lato-900'
+        font-style: normal
+        font-size: 40px
+        line-height: 120%
+        text-transform: uppercase
+        color: #262D33
+        margin-bottom: 30px

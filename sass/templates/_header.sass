@@ -1,0 +1,130 @@
+.header
+    padding-top: 24px
+    padding-bottom: 24px
+    position: relative
+    &::before, &::after
+        content: ''
+        position: absolute
+        width: 33%
+        height: 1px
+        background-color: #4F4F4F
+        left: 0
+        top: 50%
+    &::after
+        left: auto
+        right: 0
+    &__container
+        position: relative
+    &__user
+        width: 50px
+        height: 50px
+        overflow: hidden
+        display: flex
+        align-items: center
+        justify-content: center
+        border-radius: 50%
+        position: absolute
+        right: 0
+        top: -15px
+    &__logo
+        &__img
+            &:last-child
+                display: none
+
+        &__text
+            font-family: 'Lato'
+            font-style: normal
+            font-size: 13px
+            line-height: 115%
+            color: #212121
+            display: none
+    &__enter, &__reg, span
+        font-family: 'Lato-600'
+        font-style: normal
+        font-size: 16px
+        line-height: 115%
+        color: #262D33
+        text-decoration: none
+    &__burger
+            width: 28px
+            height: 20px
+            display: none
+            flex-direction: column
+            justify-content: space-between
+            cursor: pointer
+            transition: 0.3s
+            &--active
+                opacity: 0
+            &__line
+                width: 100%
+                height: 3px
+                background-color: #262D33
+                border-radius: 2px
+    &__reg
+        text-decoration: underline
+    &__box
+        &--day, &--date
+            font-family: 'Lato-600'
+            font-style: normal
+            font-size: 16px
+            line-height: 115%
+            color: #262D33
+        &--day
+            margin-right: 15px
+        &--date
+            font-family: 'Lato-900'
+            margin-right: 20px
+        &__top
+            &__group
+                display: flex
+                align-items: center
+                img
+                    margin-right: 7px
+                &--cabinet
+                    justify-content: flex-end
+        &__group
+            display: flex
+            align-items: center
+            &--left
+                margin-right: 25px
+            &__img
+                display: flex
+                align-items: center
+                justify-content: center
+            &__text
+                font-family: 'Lato-900'
+                font-style: normal
+                font-size: 16px;
+                line-height: 115%
+                color: #262D33
+                &--right
+                    font-family: 'Lato-600'
+                    font-style: normal
+                    font-size: 16px
+                    line-height: 115%
+                    color: #262D33
+                span
+                    font-family: 'Lato-600'
+            &__img
+                margin-right: 8px
+        &__top
+            margin-bottom: 50px
+            &__text
+                &--left
+                    font-family: 'Lato-Bold'
+                    font-style: normal
+                    font-size: 18px
+                    line-height: 115%
+                    color: #262D33
+                    position: relative
+                    padding-left: 13px
+                    &::before
+                        content: ''
+                        position: absolute
+                        width: 7px
+                        height: 7px
+                        border-radius: 50%
+                        background-color: #262D33
+                        left: 0
+                        top: 50%
+                        transform: translateY(-50%)

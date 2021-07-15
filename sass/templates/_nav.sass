@@ -1,0 +1,87 @@
+.nav
+    background-color: #30363D
+    padding-top: 13px
+    padding-bottom: 13px
+    padding-left: 0
+    padding-right: 0
+    transition: 0.3s
+    z-index: 3
+    &--invisible
+        display: none
+    &--active
+            height: 406px !important
+            padding: 20px !important
+    &__footer
+        font-family: 'Lato'
+        font-style: normal
+        font-size: 8px
+        line-height: 120%
+        color: #FFFFFF
+        display: none
+        max-width: 190px
+    &__box
+        margin-bottom: 30px
+        display: none
+        span
+            font-family: 'Lato'
+            font-style: normal
+            font-size: 14px
+            line-height: 115%
+            color: #FFFFFF
+            margin-right: 2px
+    &__enter, &__reg
+        font-family: 'Lato'
+        font-style: normal
+        font-size: 14px
+        line-height: 115%
+        color: #FFFFFF
+    &__enter
+        margin-right: 2px
+    &__container
+        position: relative
+        &--second
+            margin-bottom: 0 !important
+    &__close
+        position: absolute
+        top: -40px
+        right: 0
+        display: none
+    &__row
+        justify-content: center
+        &--second
+            justify-content: flex-start
+            flex-direction: row !important
+    &__link
+        font-family: 'Lato-Bold'
+        font-style: normal
+        font-size: 18px
+        line-height: 120%
+        letter-spacing: 0.5px
+        text-transform: uppercase
+        color: #FFFFFF
+        cursor: pointer
+        padding: 20px
+        transition: 0.3s
+        text-decoration: none
+        border-right: 2px solid #4B5157
+        &:last-of-type
+            border-right: none
+        &--active
+            text-decoration-line: underline
+        &--second
+            text-transform: none
+            position: relative
+            width: auto !important
+            border-right: none
+            &:last-child
+                &::after
+                    display: none
+            &::after
+                content: ''
+                position: absolute
+                width: 2px
+                height: 20px
+                background-color: #fff
+                right: 0
+                top: 50%
+                transform: translateY(-50%)
