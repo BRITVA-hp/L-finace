@@ -1231,15 +1231,12 @@ a {
     padding-bottom: 10px; }
 
 .article-slider__field {
-  width: 1520px;
   display: flex;
   transition: 0.3s;
   cursor: -webkit-grab;
   cursor: grab; }
   .article-slider__field--mobile {
-    width: 1520px;
-    display: flex;
-    width: 1280px; }
+    display: flex; }
 
 .article-slider__card {
   width: 380px;

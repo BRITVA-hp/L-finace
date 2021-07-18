@@ -63,9 +63,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Слайдер на странице article
 
-    function sliderArt(window, field, windowWidth, fieldWidth) {
+    function sliderArt(window, field, fieldMobile, windowWidth, cards) {
         const window_ = document.querySelector(window),
-              field_ = document.querySelector(field);
+              field_ = document.querySelector(field),
+              fieldMobile_ = document.querySelector(fieldMobile),
+              cards_ = document.querySelectorAll(cards),
+              fieldWidth = cards_.length * 380;
 
         if (window_) {
             let startPoint,
@@ -73,6 +76,9 @@ document.addEventListener('DOMContentLoaded', () => {
             leaveMovePoint,
             endPoint = 0,
             screenWidth;
+
+            field_.style.width = `${fieldWidth}px`;
+            fieldMobile_.style.width = `${cards_.length * 320}px`;
 
             const slidermove = (e) => {
                 e.preventDefault();
@@ -86,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 window_.removeEventListener('mousemove', slidermove);
                 if (screenWidth >= 1540) {
                     if (leaveMovePoint < 0) {
-                        endPoint = -(fieldWidth - windowWidth);
+                        endPoint = -( - windowWidth);
                         field_.style.transform = `translateX(-${fieldWidth - windowWidth}px)`;
                     }
                 } else if (screenWidth >= 1500 && screenWidth < 1540) {
@@ -196,7 +202,6 @@ document.addEventListener('DOMContentLoaded', () => {
                         field_.style.transform = `translateX(0px)`;
                     }
                 } else if (screenWidth >= 1040 && screenWidth < 1500) {
-                    console.log(1);
                     if (endPoint < -(fieldWidth - 920)) {
                         endPoint = -(fieldWidth - 920);
                         field_.style.transform = `translateX(-${fieldWidth - 920}px)`;
@@ -207,7 +212,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 } else {
                     if (endPoint < 0) {
-                        console.log(screenWidth);
                         if (Math.abs(endPoint) > Math.abs(fieldWidth - (screenWidth - 120))) {
                             endPoint = -Math.abs(fieldWidth - (screenWidth - 120));
                             field_.style.transform = `translateX(-${Math.abs(fieldWidth - (screenWidth - 120))}px)`;
@@ -226,6 +230,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     }
 
-    sliderArt('.article-slider__window', '.article-slider__field', 1300, 1520);
+    sliderArt('.article-slider__window', '.article-slider__field', '.article-slider__field--mobile', 1300, '.article-slider__card');
 
 });
